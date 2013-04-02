@@ -77,11 +77,11 @@ function TeamCity-ReportBuildStart([string]$message) {
 }
 
 function TeamCity-ReportBuildProgress([string]$message) {
-	Write-Output "##teamcity[progessMessage '$message']"
+	Write-Output "##teamcity[progressMessage '$message']"
 }
 
 function TeamCity-ReportBuildFinish([string]$message) {
-	Write-Output "##teamcity[progessFinish '$message']"
+	Write-Output "##teamcity[progressFinish '$message']"
 }
 
 function TeamCity-ReportBuildStatus([string]$status, [string]$text='') {
